@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ຄົວລາວ – ຮ້ານອາຫານລາວດັ້ງເດີມ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;600;700&family=Noto+Serif+Lao:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">🌶️ ຄົວລາວ</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="ເປີດເມນູ" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">ໜ້າຫຼັກ</a>
+        <a href="#menu">ເມນູ</a>
+        <a href="#contact">ຕິດຕໍ່</a>
+        <a href="#contact" class="btn small">ຈອງໂຕະ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="badge">ອາຫານລາວດັ້ງເດີມ</span>
+        <h1>ລົດຊາດລາວແທ້<br><em>ໃນທຸກຄຳ</em></h1>
+        <p>ສົດໃໝ່ທຸກມື້ ດ້ວຍເຄື່ອງເທດ ແລະ ວັດຖຸດິບທີ່ມີຄຸນນະພາບ ນັ່ງກິນກັບຄອບຄົວ ແລະ ໝູ່ເພື່ອນໃຫ້ອີ່ມໃຈ.</p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn">ເບິ່ງເມນູ</a>
+          <a href="#contact" class="btn ghost">ຈອງໂຕະ</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="plate">🍜</div>
+        <span class="float f1">🌿</span>
+        <span class="float f2">🍋</span>
+        <span class="float f3">🌶️</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Menu ===== -->
+  <section class="section" id="menu">
+    <div class="container">
+      <h2 class="title reveal">ເມນູອາຫານ</h2>
+      <p class="lead reveal">ເລືອກປະເພດທີ່ທ່ານມັກ</p>
+      <div class="filters reveal" id="filters"></div>
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <h2 class="title reveal">ຕິດຕໍ່ ແລະ ຈອງໂຕະ</h2>
+      <p class="lead reveal">ຝາກຂໍ້ຄວາມໄວ້ ແລ້ວພວກເຮົາຈະຕິດຕໍ່ກັບ</p>
+      <div class="contact-grid">
+        <div class="info reveal">
+          <div class="info-item"><span>📍</span><div><b>ທີ່ຢູ່</b><br>ເມືອງ ປາກເຊ , ແຂວງ ຈຳປາສັກ</div></div>
+          <div class="info-item"><span>📞</span><div><b>ໂທລະສັບ</b><br>209-143-284</div></div>
+          <div class="info-item"><span>🕘</span><div><b>ເວລາເປີດ</b><br>ທຸກມື້ 09:00 – 21:00</div></div>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <input type="text" id="name" placeholder="ຊື່ຂອງທ່ານ" autocomplete="name">
+          <input type="tel" id="phone" placeholder="ເບີໂທລະສັບ" autocomplete="tel">
+          <select id="guests" aria-label="ຈຳນວນຄົນ">
+            <option>1–2 ຄົນ</option><option>3–4 ຄົນ</option><option>5–8 ຄົນ</option><option>ຫຼາຍກວ່າ 8 ຄົນ</option>
+          </select>
+          <textarea id="note" rows="3" placeholder="ຂໍ້ຄວາມ (ຖ້າມີ)"></textarea>
+          <button type="submit" class="btn">ສົ່ງຂໍ້ຄວາມ</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> ຄົວລາວ · ສະຫງວນລິຂະສິດ</p>
+  </footer>
+
+  <script src="harn.js"></script>
+</body>
+</html>
